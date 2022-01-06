@@ -13,5 +13,15 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:3000/account/infor
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDkwYWRjNmUwN2I1MzRkYzAyNzAzNSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjI4NTYwMTk4fQ.x5pFQ4kpkvPCgq1OHlr6e8rwCrIFfE6N_Sa_thr_oa8
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "tacongduc"
+}
+
+
+###
+GET http://localhost:5000/user/infor
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDY3MGM2MTE5YWExODg0NjU3MGFhZSIsImlhdCI6MTY0MTQ3ODk5OCwiZXhwIjoxNjQxNTY1Mzk4fQ.YprZf7FURSi9PP9nqxVcSH58v052Pd7ebsXemg_bqZ4
