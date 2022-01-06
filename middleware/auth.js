@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-const authMiddleware = (req, res, next) => {
+const auth = (req, res, next) => {
     try {
         const token = req.header("Authorization")
         if(!token) return res.status(400).json({ msg: 'Invalid Authentication'})
@@ -16,4 +16,4 @@ const authMiddleware = (req, res, next) => {
     }
 }
 
-module.exports = authMiddleware
+module.exports = auth

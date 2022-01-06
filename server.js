@@ -15,6 +15,7 @@ app.use(fileUpload({
 
 // routes
 app.use('/user', require('./routes/user.router'))
+app.use('/api', require('./routes/category.router'))
 
 // connnect db
 const URI = process.env.MONGO_URL
