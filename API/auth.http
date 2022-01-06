@@ -1,0 +1,17 @@
+GET http://localhost:5000/user
+
+
+###
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "password": "tacongduc"
+}
+
+
+###
+GET http://localhost:3000/account/infor
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDkwYWRjNmUwN2I1MzRkYzAyNzAzNSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjI4NTYwMTk4fQ.x5pFQ4kpkvPCgq1OHlr6e8rwCrIFfE6N_Sa_thr_oa8
