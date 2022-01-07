@@ -10,12 +10,13 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 app.use(fileUpload({
-    useTempFiles: true
-}))
+    useTempFiles : true,
+}));
 
 // routes
 app.use('/user', require('./routes/user.router'))
 app.use('/api', require('./routes/category.router'))
+app.use('/api', require('./routes/upload.router'))
 
 // connnect db
 const URI = process.env.MONGO_URL
