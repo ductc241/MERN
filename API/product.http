@@ -1,0 +1,21 @@
+GET http://localhost:5000/api/product
+###
+
+GET http://localhost:5000/api/product?price=120
+
+###create
+POST http://localhost:5000/api/product
+Content-Type: application/json
+
+{
+    "product_id": "pr01",
+    "title":"title 1",
+    "price": 120,
+    "description": "description",
+    "content": "content",
+    "images": {
+	    "public_id": "Mern/ywvlr14qsda84z4rkm71",
+	    "url": "https://res.cloudinary.com/dzoav55s4/image/upload/v1641529687/Mern/ywvlr14qsda84z4rkm71.jpg"
+    },
+    "category": "Smartphone Update"
+}
