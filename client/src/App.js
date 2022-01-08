@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState, useContext } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import './App.css'
@@ -10,7 +9,7 @@ import { DataProvider } from './GlobalState'
 import Header from './components/common/Header/Header'
 
 // Component - Store
-import Shop from './components/store/Shop';
+import Products from './components/store/Products/Products';
 
 const App = () => {
   return (
@@ -21,7 +20,7 @@ const App = () => {
           <Routes>
             <Route path="/*">
 					      <Route index element={<Navigate to="shop" />} />
-                <Route path="shop" element={<Shop />} />
+                <Route path="shop" element={<Products />} />
 		        </Route>
           </Routes>
         </BrowserRouter>

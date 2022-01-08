@@ -1,6 +1,6 @@
 ### Create
 POST http://localhost:5000/api/category
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDY3MGM2MTE5YWExODg0NjU3MGFhZSIsImlhdCI6MTY0MTQ3ODk5OCwiZXhwIjoxNjQxNTY1Mzk4fQ.YprZf7FURSi9PP9nqxVcSH58v052Pd7ebsXemg_bqZ4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDY3MGM2MTE5YWExODg0NjU3MGFhZSIsImlhdCI6MTY0MTY1NzkwNCwiZXhwIjoxNjQxNzQ0MzA0fQ.bWQO8ezam6pid5Z_VtAB_f5yfvNrZFzSomPNhF8XrBs
 Content-Type: application/json
 
 {
@@ -9,11 +9,11 @@ Content-Type: application/json
 
 ### Update
 PUT http://localhost:5000/api/category/61d725ff93561cc73229bed7
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDY3MGM2MTE5YWExODg0NjU3MGFhZSIsImlhdCI6MTY0MTQ3ODk5OCwiZXhwIjoxNjQxNTY1Mzk4fQ.YprZf7FURSi9PP9nqxVcSH58v052Pd7ebsXemg_bqZ4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDY3MGM2MTE5YWExODg0NjU3MGFhZSIsImlhdCI6MTY0MTY1NzkwNCwiZXhwIjoxNjQxNzQ0MzA0fQ.bWQO8ezam6pid5Z_VtAB_f5yfvNrZFzSomPNhF8XrBs
 Content-Type: application/json
 
 {
-    "name": "Smartphone Update"
+    "name": "Tablet"
 }
 
 ### Get all
