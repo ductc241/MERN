@@ -8,14 +8,14 @@ POST http://localhost:5000/api/product
 Content-Type: application/json
 
 {
-    "product_id": "pr01",
-    "title":"title 1",
-    "price": 120,
-    "description": "description",
-    "content": "content",
+    "product_id": "pr02",
+    "title":"Oneplus",
+    "price": 100,
+    "description": "Description oneplus",
+    "content": "Oneplus Content",
     "images": {
-	    "public_id": "Mern/ywvlr14qsda84z4rkm71",
-	    "url": "https://res.cloudinary.com/dzoav55s4/image/upload/v1641529687/Mern/ywvlr14qsda84z4rkm71.jpg"
+        "public_id": "Mern/oeqpjmbdltyinuyhamen",
+        "url": "https://res.cloudinary.com/dzoav55s4/image/upload/v1641737469/Mern/oeqpjmbdltyinuyhamen.png"
     },
-    "category": "Smartphone Update"
+    "category": "Smartphone"
 }

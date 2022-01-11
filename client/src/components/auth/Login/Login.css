@@ -1,0 +1,29 @@
+.login{
+    margin-top: 50px;
+}
+
+.login_container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.login_title{
+    margin-bottom: 20px;
+}
+
+.login_form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.form_buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login .btn{
+    padding: 16px 32px;
+    font-size: 17px;
+}

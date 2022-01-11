@@ -1,0 +1,31 @@
+.prDetail{
+    padding-top: 50px;
+}
+
+.prDetail_container{
+    grid-template-columns: 1fr 2fr;
+}
+
+.prDetail_content{
+    padding-top: 20px;
+}
+
+.prDetail_content .title{
+    font-size: 31px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.prDetail_content .price{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.product_related{
+    margin-top: 50px;
+}
+
+.prRelated_container{
+    grid-template-columns: repeat(4, 1fr);
+}

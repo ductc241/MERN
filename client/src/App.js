@@ -10,6 +10,8 @@ import Header from './components/common/Header/Header'
 
 // Component - Store
 import Products from './components/store/Products/Products';
+import ProductDetail from './components/store/ProductDetail/ProductDetail';
+import Login from './components/auth/Login/Login';
 
 const App = () => {
   return (
@@ -18,10 +20,10 @@ const App = () => {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/*">
-					      <Route index element={<Navigate to="shop" />} />
-                <Route path="shop" element={<Products />} />
-		        </Route>
+            <Route index element={<Navigate to="shop" />} />
+            <Route path="shop" element={<Products />} />
+            <Route path="shop/:id" element={<ProductDetail />} />
+            <Route path="login" element={<Login />} />
           </Routes>
         </BrowserRouter>
       </div>

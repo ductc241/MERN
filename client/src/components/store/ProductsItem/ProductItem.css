@@ -1,0 +1,38 @@
+.product{
+    padding: 25px;
+    transition: .3s;
+}
+
+.product:hover{
+    box-shadow: 0 0 15px #ddd;
+    transition: .3s;
+}
+
+
+.product_name,
+.product_price,
+.product_description{
+    text-align: center;
+}
+
+.product_name{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.product_price{
+    color: red;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.product_description{
+    margin-bottom: 15px;
+}
+
+.product_action{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}

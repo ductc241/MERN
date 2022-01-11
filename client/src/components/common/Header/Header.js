@@ -23,7 +23,7 @@ const Header = () => {
                             <Link to="/history" className='nav_link'>History</Link>
                         </li>
                         <li className="nav_item">
-                            <Link to="/order" className='nav_link'>Login</Link>
+                            <Link to="/login" className='nav_link'>Login</Link>
                         </li>
                     </ul>
                     <div className="nav_button">

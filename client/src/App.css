@@ -67,3 +67,10 @@ ul li{
 .grid{
     display: grid;
 }
+
+
+.btn{
+    background-color: teal;
+    padding: 10px 20px;
+    color: white;
+}
