@@ -23,10 +23,13 @@ const Login = () => {
         e.preventDefault()
 
         try {
-            const res = await axios.post('http://localhost:5000/user/login', user)
-            console.log(res)
+            const res = await axios.post('http://localhost:5000/user/login', user, {
+                withCredentials: true
+            })
+            localStorage.setItem('firstLogin', true)
+
         } catch (error) {
-            alert(error.response.data.msg)
+            alert(error)
         }
     }
 
