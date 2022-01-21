@@ -17,11 +17,18 @@ POST http://localhost:5000/user/login
 Content-Type: application/json
 
 {
-    "email": "admin@gmail.com",
+    "email": "user@gmail.com",
     "password": "tacongduc"
 }
 
 
 ###
 GET http://localhost:5000/user/infor
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDY3MGM2MTE5YWExODg0NjU3MGFhZSIsImlhdCI6MTY0MTQ3ODk5OCwiZXhwIjoxNjQxNTY1Mzk4fQ.YprZf7FURSi9PP9nqxVcSH58v052Pd7ebsXemg_bqZ4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDliNjkxODNhYjE0OGUwMDc3MDNiZSIsImlhdCI6MTY0MjU4NDkxOCwiZXhwIjoxNjQyNjcxMzE4fQ.uogDmQsn-mSTTizALXzHSmXeasDkwohhmfwLc4lQvFg
+
+###
+GET http://localhost:5000/user/refresh_token
+
+###
+GET http://localhost:5000/user/logout
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDliNjkxODNhYjE0OGUwMDc3MDNiZSIsImlhdCI6MTY0MjY4OTQ4NSwiZXhwIjoxNjQyODYyMjg1fQ.i7NzKvqkcQe4XHHCVk0vuPdqwjGghcDAx3RCyRwx6O0

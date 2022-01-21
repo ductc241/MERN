@@ -12,6 +12,7 @@ import Header from './components/common/Header/Header'
 import Products from './components/store/Products/Products';
 import ProductDetail from './components/store/ProductDetail/ProductDetail';
 import Login from './components/auth/Login/Login';
+import Cart from './components/store/Cart/Cart';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="shop" element={<Products />} />
             <Route path="shop/:id" element={<ProductDetail />} />
             <Route path="login" element={<Login />} />
+            <Route path="cart" element={<Cart />} />
           </Routes>
         </BrowserRouter>
       </div>

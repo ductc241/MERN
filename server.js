@@ -2,16 +2,22 @@ require('dotenv').config()
 const express = require('express');
 const cors = require('cors')
 const fileUpload = require('express-fileupload');
-const cookieParser = require('cookie-parser');
+const cookieParser = require('cookie-parser')
+
 const mongoose = require('mongoose');
 
 // app
 const app = express()
+app.use(cookieParser())
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    credentials: true,
+    origin: 'http://localhost:3000'
+}));
 app.use(fileUpload({
     useTempFiles : true,
 }));
+
 
 // routes
 app.use('/user', require('./routes/user.router'))

@@ -16,9 +16,10 @@ export const DataProvider = ({children}) => {
             const res = await axios.get('http://localhost:5000/user/refresh_token', {
                 withCredentials: true
             })
-            setToken(res.data.accessToken)
+            setToken(res.data.accesstoken)
         }
     }, [])
+
 
     const state = {
         token: [token, setToken],

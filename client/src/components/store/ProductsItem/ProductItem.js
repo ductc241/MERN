@@ -1,7 +1,12 @@
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { GlobalState } from '../../../GlobalState'
 import "./ProductItem.css"
 
+
 const ProductItem = ({product}) => {
+    const state = useContext(GlobalState);
+
     return (
         <div className="product">
             <img src={product.images.url}/>
@@ -15,7 +20,7 @@ const ProductItem = ({product}) => {
                         <Link className='btn' to={`/shop/${product._id}`}>Detail</Link>
                     </button>
                     
-                    <button className="btn">Add Card</button>
+                    <button className="btn" onClick={() => state.userAPI.addToCart(product)}>Add Card</button>
                 </div>
             </div>
         </div>
