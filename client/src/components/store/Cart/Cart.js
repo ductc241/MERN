@@ -7,6 +7,7 @@ import "./Cart.css"
 const Cart = () => {
     const state = useContext(GlobalState)
     const [cart] = state.userAPI.cart
+    const [ token ] = state.token
 
     if(cart.length === 0){
         return (
@@ -45,7 +46,7 @@ const Cart = () => {
                     </tbody>
                 </table>
 
-                <Paypal />
+                <Paypal cart={cart} token={token}/>
             </div>
         </div>
     )

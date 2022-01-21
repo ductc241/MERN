@@ -8,13 +8,4 @@ router.route('/product')
 router.route('/product/:id')
     .put(productController.updateProduct)
     .delete(productController.deleteProduct)
-
-
-router.route('/product/cookie')
-    .get((req, res) => {
-        res.cookie('test', 'test')
-        res.status(200).json({
-            msg: 'csa'
-        })
-    })
 module.exports = router
